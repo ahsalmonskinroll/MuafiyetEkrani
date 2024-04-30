@@ -4,12 +4,22 @@
 }
 
 .navbar-text {
-    font-size: 18px; /* Yazı boyutunu isteğinize göre ayarlayın */
-    color: white; /* Yazı rengini beyaz yapar */
+    font-size: 18px; 
+    color: white; 
 }
+
 body {
     padding-top: 120px;
-  }
+}
+
+/* Ekran genişliği 600 pikselden küçükse */
+@media screen and (max-width: 600px) {
+    /* Özel stil kuralları */
+    body {
+        font-size: 14px;
+    }
+}
+
 
   .grid-container {
     display: grid;
@@ -20,19 +30,10 @@ body {
 .specific-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px; /* İsteğe bağlı: Sütunlar arasındaki boşluk */
-    overflow-y: auto; /* Dikey kaydırma ekleyin */
-    max-height: 240px; /* Container'ın maksimum yüksekliğini ayarlayın */
-}
-
-.specific-container .box {
-    background-color: #d1e4f2;
-    padding: 20px; /* İsteğe bağlı: İçeriğin etrafındaki boşluk */
-}
-
-.basic-container{
-    max-height: 250px;
-    padding: 50px;
+    gap: 5px; /* İsteğe bağlı: Sütunlar arasındaki boşluk */
+    overflow-y: auto; /* Dikey kaydırma*/
+    max-height: 240px; /* Container'ın maksimum yüksekliği*/
+    padding: 20px;
 }
 
 .navbar {
@@ -46,4 +47,9 @@ body {
 .page-content {
     margin-top: 56px; /* Navbar'ın yüksekliği kadar bir üst margin ekleyin */
     /* Eğer navbar'ın yüksekliği sabit değilse, bu değeri navbar'ın yüksekliğiyle değiştirmelisiniz */
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 250px; /* input alanı genişlik ayarı */
 }
