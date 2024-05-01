@@ -1,27 +1,40 @@
-.box {
-    background-color: lightblue;
-    min-height: 50px;
-}
-
-.navbar-text {
-    font-size: 18px; 
-    color: white; 
-}
-
-body {
-    padding-top: 120px;
-}
-
 /* Ekran genişliği 600 pikselden küçükse */
 @media screen and (max-width: 600px) {
     /* Özel stil kuralları */
     body {
         font-size: 14px;
     }
+    
+    
+}
+
+.navbar{
+    flex-wrap: nowrap;
+    --bs-navbar-padding-y: 0rem;
+
+}
+
+.box {
+    background-color: lightblue;
+    min-height: 30rem;
+}
+
+.basic-container{
+    max-height: 240px; /* Container'ın maksimum yüksekliği*/
+}
+
+.navbar-text {
+    font-size: 18px; 
+    color: white; 
+    padding-bottom: 0rem;
 }
 
 
-  .grid-container {
+body {
+    padding-top: 7rem;
+}
+
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* İki sütun */
     gap: 10px; /* Boşluk */
@@ -35,13 +48,16 @@ body {
     max-height: 240px; /* Container'ın maksimum yüksekliği*/
     padding: 20px;
 }
+.container{
+
+}
 
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Navbar'ın diğer içeriklerin üstünde olmasını sağlar */
+
 }
 
 .page-content {
@@ -51,5 +67,10 @@ body {
 
 input[type="text"],
 input[type="email"] {
-    width: 250px; /* input alanı genişlik ayarı */
+    width: 10rem; /* input alanı genişlik ayarı */
+
+}
+
+select {
+    width: 10rem; /* Genişlik ayarı */
 }
