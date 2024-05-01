@@ -5,13 +5,28 @@
         font-size: 14px;
     }
     
-    
 }
 
 .navbar{
     flex-wrap: nowrap;
     --bs-navbar-padding-y: 0rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
+.container{
+    padding-right: 0%;
+    padding-top: 1rem;
+    
+
+}
+
+.container-fluid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* İki sütun */
+    gap: 10px; /* Boşluk */
 }
 
 .box {
@@ -19,9 +34,7 @@
     min-height: 30rem;
 }
 
-.basic-container{
-    max-height: 240px; /* Container'ın maksimum yüksekliği*/
-}
+
 
 .navbar-text {
     font-size: 18px; 
@@ -31,13 +44,16 @@
 
 
 body {
-    padding-top: 7rem;
+    padding-top: 6rem;
+
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* İki sütun */
     gap: 10px; /* Boşluk */
+    
+   
 }
 
 .specific-container {
@@ -48,29 +64,15 @@ body {
     max-height: 240px; /* Container'ın maksimum yüksekliği*/
     padding: 20px;
 }
-.container{
 
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-}
-
-.page-content {
-    margin-top: 56px; /* Navbar'ın yüksekliği kadar bir üst margin ekleyin */
-    /* Eğer navbar'ın yüksekliği sabit değilse, bu değeri navbar'ın yüksekliğiyle değiştirmelisiniz */
-}
 
 input[type="text"],
 input[type="email"] {
-    width: 10rem; /* input alanı genişlik ayarı */
+    width: 15rem; /* input alanı genişlik ayarı */
 
 }
 
 select {
-    width: 10rem; /* Genişlik ayarı */
+    width: 15rem; /* Genişlik ayarı */
 }
+

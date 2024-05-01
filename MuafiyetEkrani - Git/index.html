@@ -37,67 +37,63 @@
     <!--NAVBAR-HEADER BİTİŞ-->
 
     <!--sayfa düzeni için container-->
-    <div class="basic-container">
-
       <div class="container-fluid">
         <div class="row">
 
           <!--SOL KISIM BAŞLANGIÇ-->
-          <div class="col-sm">
-            <div class="box" style="background-color: #f0f9ff; border: 2px solid #bad1da; border-radius: 10px;">    
+          <div class="col">
+            <div class="box" style="background-color: #f0f9ff; border: 2px solid #bad1da; border-radius: 10px;"> <!--sol kutu-->
               
               <!--ÖĞRENCİ BİLGİLERİ BAŞLANGICI-->
               <div class="container">
                 <h5>Öğrenci Bilgileri</h5>
                   <form action="action.php">
                   <!--BACK END DOSYASI-->
+
                   <!--SOLUN SOLU-->
-                  <div class="container">
-                    <div class="grid-container">
-                      <div class="left-container">
-                        <div class="col-sm-7">
-                          <label for="isim" >*Ad:</label>
+                  <div class="row">
+                    <div class="col">
+                      
+                        <label for="isim" >*Ad:</label>
+                      <br>
+                      <input type="text" name="Name" id="isim" placeholder="Giriniz..." required style="border: 2px solid #bad1da; border-radius: 10px;">
+                      
+                      <br>
+                      
+                        <label for="soyisim">*Soyad:</label>
+                      <br>
+                      <input type="text" name="Surname" id="soyisim" placeholder="Giriniz..." required style="border: 2px solid #bad1da; border-radius: 10px;">
+                      
+                      <br>
+
+                      
+                      <label for="tcKimlik">*TC Kimlik Numarası:</label>
+                      <br>
+                      <input type="text" name="TcNo" id="tcKimlik" placeholder="Giriniz..." required style="border: 2px solid #bad1da; border-radius: 10px;">
+                      
+                      <br> 
+
+                      
+                        <label for="ogrNo">Öğrenci Numarası:</label>
                         <br>
-                        <input type="text" name="Name" id="isim" placeholder="Giriniz..." required style="border: 2px solid #bad1da; border-radius: 10px;">
-                        </div>
-                        <br> <br>
-                        <div class="col-sm-7">
-                          <label for="soyisim">*Soyad:</label>
+                        <input type="text" name="StudentNo" id="ogrNo" placeholder="Giriniz..." style="border: 2px solid #bad1da; border-radius: 10px;">
+                      
+                      <br>
+                      
+                        <label for="mail">*E-posta:</label>
                         <br>
-                        <input type="text" name="Surname" id="soyisim" placeholder="Giriniz..." required style="border: 2px solid #bad1da; border-radius: 10px;">
-                        </div>
-                        <br><br>
-
-                        <div class="col-sm-7">
-                        <label for="tcKimlik">*TC Kimlik Numarası:</label>
-                        <input type="text" name="TcNo" id="tcKimlik" placeholder="Giriniz..." required style="border: 2px solid #bad1da; border-radius: 10px;">
-                        </div>
-                        <br> <br>
-
-                        <div class="col-sm-7">
-                          <label for="ogrNo">Öğrenci Numarası:</label>
-                          <br>
-                          <input type="text" name="StudentNo" id="ogrNo" placeholder="Giriniz..." style="border: 2px solid #bad1da; border-radius: 10px;">
-                        </div>
-                        <br><br>
-
-                        <div class="col-sm-7">
-                          <label for="mail">*E-posta:</label>
-                          <br>
-                          <input type="email" name="MailAdress" id="mail" placeholder="birisi@example.com" required style="border: 2px solid #bad1da; border-radius: 10px;">
-                        </div>
-                        
-                      </div>
-
-                      <div class="right-container">
-                        <div class="col-sm-7">
+                        <input type="email" name="MailAdress" id="mail" placeholder="birisi@example.com" required style="border: 2px solid #bad1da; border-radius: 10px;">
+                      
+                    </div>
+                    <div class="col">
+                      
                         <label for="telno">*Telefon Numarası:</label>
                         <br>
                         <input type="text" name="Name" id="isim" placeholder="Giriniz..." required style="border: 2px solid #bad1da; border-radius: 10px;">
-                        </div>
                         
-                        <br><br>
-                        <div class="col-sm-7">
+                        
+                        <br>
+                        
                         <label for="bolumBaskanligi">*Bölüm Başkanlığı Seçimi:</label>
                         <br>
                         <select name="DepartmentName" id="bolumBaskanligi" required style="border: 2px solid #bad1da; border-radius: 10px;">
@@ -105,10 +101,10 @@
                         <option value="bir">Birinci Seçenek?</option>
                         <option value="iki">İkinci Seçenek?</option>
                         </select>            
-                        </div>
                         
-                        <br><br>
-                        <div class="col-sm-7">
+                        
+                        <br>
+                        
                         <label for="kayitlanma">*Kayıtlanma Şekli</label>
                         <br>
                         <select name="RegisterType" id="kayitlanma" required style="border: 2px solid #bad1da; border-radius: 10px;">
@@ -117,55 +113,57 @@
                           <option value="ekmadde">Ek Madde-1</option>
                           <option value="agno">AGNO ile Merkezi Yatay Geçiş</option>
                         </select>
-                        </div>
                         
-                        <br><br>
-                        <div class="col-sm-7">
+                        
+                        <br>
+                        
                           <label for="oncekiUni">*Önceki Üniversite Bilgisi:</label>
                           <br>
                           <input type="text" name="PreSchoolName" id="oncekiUni" placeholder="Giriniz..." required style="border: 2px solid #bad1da; border-radius: 10px;">
-                        </div>
                         
-                        <br><br>
-                        <div class="col-sm-7">
+                        
+                        <br>
+                        
                           <label for="oncekiFak">*Önceki Fakülte Bilgisi:</label>
                           <br>
                           <input type="text" name="PreFacultyName" id="oncekiFak" placeholder="Giriniz..." required style="border: 2px solid #bad1da; border-radius: 10px;"> 
-                        </div>
-                      </div>
+                        
+                    </div>
+
+
+
                   </div>
                   </div>
                   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <input class="btn" type="submit" value="Bilgileri Kaydet" style="background-color: #456097; color: white; border: 2px solid #bad1da; border-radius: 10px;">
                   </div>
                 </form>
+                <!--ÖĞRENCİ BİLGİLERİ BİTİŞİ-->
+                <!--EKLER BAŞLANGIÇ-->
                 
-              </div>
-              <!--ÖĞRENCİ BİLGİLERİ BİTİŞİ-->
-
-              <div class="container">
-                <h5>Ekler</h5>
                 <div class="container">
-                  <div class="grid-container">
-                      <div class="left-container">
-                        <label for="">*Not Döküm Belgesi(Onaylı PDF)</label>
+                  <h5>Ekler</h5>
+                    <div class="container row g-2">   
+                        <div class="col-sm">
+                        <label for="">*Not Döküm Belgesi (Onaylı PDF)</label>
                         <br>
                         <input type="file" accept=".pdf" required>
-                      </div>
-                      <div class="right-container">
-                        <label for="">*Ders İçerikleri(Onaylı PDF)</label>
+                        </div>
+                        <div class="col-sm">
+                        <label for="">*Ders İçerikleri (Onaylı PDF)</label>
                         <br>
                         <input type="file" accept=".pdf" required >
-                        <br><br>
+                        </div>
+                          <br><br>
                       </div>
-                  </div>              
-              </div>
-              </div>    
-            </div>  
-          </div>
-          <!--SOL KISIM BİTİŞ-->
+                </div>   
+                <!--EKLER BİTİŞ--> 
+            </div>
+          </div>  
+        </div>
+        <!--SOL KISIM BİTİŞ-->
 
-          <!--SAĞ KISIM BAŞLANGIÇ-->
+        <!--SAĞ KISIM BAŞLANGIÇ-->
           <div class="col">
             <div class="box" style="background-color: #f0f9ff; border: 2px solid #bad1da; border-radius: 10px;">
               <div class="container">
@@ -188,7 +186,6 @@
                             <option value="ders4">Ders4 Örneği</option>
                           </select>
                           </div>
-                          <br>
                           <div class="container row g-2">
                            <div class="col-sm"> 
                                 <label for="kredi">Kredi:</label>
@@ -205,36 +202,27 @@
 
                         <div class="right-container">
                           <h6>Muaf Olunması İstenen Dersin;</h6>
-                          <div class="container row g-2">
-                            <div class="col">
-                              <label for="dersAdi">*Ders Adı:</label>
-                              <br>
-                              <select name="RegisterType" placeholder="Seçiniz" id="dersAdi" required style="border: 2px solid #bad1da; border-radius: 10px; width: 15ch;">
-                                <option disabled selected value="">Seçiniz</option>
-                                <option value="ders1">Ders1 Örneği fsdmfnösdmnfmösdnfömsdnfödsnfmsdnfmndfmdmöfndsöfnömdsnff</option>
-                                <option value="ders2">Ders2 Örneği</option>
-                                <option value="ders3">Ders3 Örneği</option>
-                                <option value="ders4">Ders4 Örneği</option>
-                              </select>
-                              </div>
-                              <div class="col">
-                                <label for="kredi">Kod:</label>
-                                <br> 
-                                <input type="number" placeholder="000000" name="SubjectCredit" id="kredi" style="border: 2px solid #bad1da; border-radius: 10px; width: 15ch;" maxlength="6" disabled>
-                            </div>
-                          </div>
-                          
+                          <div class="col-sm-7">
+                            <label for="dersAdi">*Ders Adı:</label>
                             <br>
+                            <select name="RegisterType" placeholder="Seçiniz" id="dersAdi" required style="border: 2px solid #bad1da; border-radius: 10px; width: 15ch;">
+                              <option disabled selected value="">Seçiniz</option>
+                              <option value="ders1">Ders1 Örneği fsdmfnösdmnfmösdnfömsdnfödsnfmsdnfmndfmdmöfndsöfnömdsnff</option>
+                              <option value="ders2">Ders2 Örneği</option>
+                              <option value="ders3">Ders3 Örneği</option>
+                              <option value="ders4">Ders4 Örneği</option>
+                            </select>
+                            </div>
                             <div class="container row g-2">
-                              <div class="col">
+                             <div class="col-sm"> 
                                   <label for="kredi">Kredi:</label>
                                   <br> 
-                                  <input type="number" placeholder="00" name="SubjectCredit" id="kredi" style="border: 2px solid #bad1da; border-radius: 10px; width: 5ch;" maxlength="6" disabled>
+                                  <input type="number" placeholder="00" name="SubjectCredit" id="kredi" style="border: 2px solid #bad1da; border-radius: 10px; width: 6ch;" maxlength="6" disabled>
                               </div>
-                                <div class="col">
+                                <div class="col-sm">
                                   <label for="akts">AKTS:</label>
                                   <br>
-                                  <input type="number" placeholder="00" name="SubjectAKTS" id="akts" style="border: 2px solid #bad1da; border-radius: 10px; width: 5ch;" maxlength="6" disabled>
+                                  <input type="number" placeholder="00" name="SubjectAKTS" id="akts" style="border: 2px solid #bad1da; border-radius: 10px; width: 6ch;" maxlength="6" disabled>
                                 </div>
                             </div>
                           <br>
@@ -341,27 +329,17 @@
               </div>
               
             </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn btn-primary me-md-2" href="#" type="button" style="background-color: #456097; color: white; border: 2px solid #bad1da; border-radius: 10px;">Sonraki Sayfa</button>
+            </div>
             <!--KAYDEDILEN DERS BILGILERI BİTİŞ-->
-          </div>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-primary me-md-2" href="#" type="button" style="background-color: #456097; color: white; border: 2px solid #bad1da; border-radius: 10px;">Sonraki Sayfa</button>
-          </div>
-          <!--SAĞ KISIM BİTİŞ-->
-
-
-          
-        </div>
-      </div>
-    </div>
-    </div>
-    
-  </div>
-  
-    
-
-        
-
       
+      
+      
+          </div>
+          
+          <!--SAĞ KISIM BİTİŞ-->
+        </div>
 
   </body>
 </html>
